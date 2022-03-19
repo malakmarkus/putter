@@ -19,22 +19,21 @@ var  getCityInfo = function(city) {
     var apiUrl = "https://api.teleport.org/api/cities/?search=" + city +""
     fetch(apiUrl).then(function(response){ response.json().then(function(data){
         displayCities(data, city)
-        console.log(data);
         });
     })
 };
 var displayCities = function(cities, searchTerm){
     resultsContainerEl.textContent = "";
     citySearchTerm.textContent = searchTerm;
-    console.log(cities);
-    console.log(searchTerm);
-    for (var i = 0; i < cities.length; i++){
+    const results = cities._embedded["city:search-results"];
 
-        resultDisplay = cities[i].search-results;
+    for (var i = 0; i < results.length; i++){
+
+        resultDisplay = results[i];
         var cityEl = document.createElement("div");
         cityEl.classList = "list-item";
         var titleEl = document.createElement("span");
-        titleEl.textContent = resultDisplay;
+        titleEl.textContent = resultDisplay.matching_full_name;
         cityEl.appendChild(titleEl);
         resultsContainerEl.appendChild(cityEl);
         
