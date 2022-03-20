@@ -31,6 +31,7 @@ h2 {
     background-color: skyblue;
     border-radius: 10px 10px 10px 10px;
     padding: 10px 10px 10px 10px;
+    position: relative;
 }
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -58,18 +59,13 @@ body {
     margin-bottom: 10%;
    
 }
-​
+
 textarea {
     position: relative;
     left: 10%;
     width: 30%;
     padding-left: 50px;
     padding-top: 10px;
-}
-​
-.card {
-    width: 700px;
-    height: 700px;
 }
 ​
 button {
@@ -85,4 +81,12 @@ button {
 ​
 button:hover {
     background-image: linear-gradient(to bottom, skyblue, steelblue);
+}
+
+.card {
+    width: 700px;
+    height: 700px;
+    background-color: white;
+    position: relative;
+    top: 50px; left: 700px;
 }
