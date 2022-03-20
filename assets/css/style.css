@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 ​
+header {
+    background-color: white;
+}
+
 h1 {
     position: relative;
     top: 10px;
