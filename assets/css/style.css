@@ -60,16 +60,6 @@ body {
     margin-bottom: 10%;
    
 }
-
-textarea {
-    position:relative;
-    left: 5%;
-    width: 30%;
-    padding-left: 50px;
-    padding-top: 10px;
-    border-style: solid;
-    border-color: black;
-}
 .card {
     width: 700px;
     height: 700px;
@@ -78,23 +68,28 @@ textarea {
     top: 50px; left: 700px;
     border-radius: 20px 20px 20px 20px;
 }
-
-​
 button {
     position: relative;
     left: 10%;
-    color: white;
+    color: gray;
     font-size: 20px;
     padding: 10px 10px 10px 10px;
     background-image: linear-gradient(to bottom, lightblue, skyblue);
     border-radius: 10px 10px 10px;
     border-color: skyblue;
 }
-​
 button:hover {
     background-image: linear-gradient(to bottom, skyblue, steelblue);
 }
 
+textarea {
+    position:relative;
+    left: 5%;
+    width: 30%;
+    padding-left: 50px;
+    padding-top: 10px;
+    border: 1px solid black;
+}
 
 .styleputter {
     font-weight: bolder;
