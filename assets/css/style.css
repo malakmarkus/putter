@@ -60,6 +60,7 @@ body {
     margin-bottom: 10%;
    
 }
+/* SEARCH FUNCTION */
 .card {
     width: 700px;
     height: 850px;
@@ -95,5 +96,4 @@ textarea {
 .styleputter {
     font-weight: bolder;
     font-size: 40px;
-
 }
