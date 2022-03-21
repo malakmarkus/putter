@@ -68,18 +68,19 @@ body {
     top: 50px; left: 700px;
     border-radius: 20px 20px 20px 20px;
 }
-button {
+button:hover {
+    background-image: linear-gradient(to bottom, skyblue, steelblue);
+}
+.button {
     position: relative;
     left: 10%;
-    color: gray;
+    color: white;
     font-size: 20px;
     padding: 10px 10px 10px 10px;
     background-image: linear-gradient(to bottom, lightblue, skyblue);
     border-radius: 10px 10px 10px;
     border-color: skyblue;
-}
-button:hover {
-    background-image: linear-gradient(to bottom, skyblue, steelblue);
+    width:fit-content;
 }
 
 textarea {
