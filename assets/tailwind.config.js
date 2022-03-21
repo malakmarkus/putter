@@ -1,16 +1,16 @@
-/* TAILWIND MEDIA QUERIES- NEED CUSTOMIZED */
+/* TAILWIND MEDIA QUERIES FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
 module.exports = {
     theme: {
         screens: {
-            'tablet': '640px',
+            '': '640px',
             // => @media (min-width: 640px) { ... }
 
-            'laptop': '1024px',
-            // => @media (min-width: 1024px) { ... }
+            '': '768px',
+            // => @media (min-width: 1768px) { ... }
 
-            'desktop': '1280px',
-            // => @media (min-width: 1280px) { ... }
+            '': '1024px',
+            // => @media (min-width: 1024px) { ... }
         },
     }
 }
