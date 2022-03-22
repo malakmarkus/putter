@@ -1,3 +1,10 @@
+/* questions
+1- in the link reults instead of showing thw actual link we need it to show "click here"
+2- tailwindcss warning ?
+
+
+*/
+
 var searchFormEl = document.querySelector("#search-form");
 var inputEl = document.querySelector("#book-name");
 var resultsContainerEl = document.querySelector("#results-container");
