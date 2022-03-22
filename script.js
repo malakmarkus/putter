@@ -48,6 +48,7 @@ var displayBooksInfo = function(books) {
         // creat a sapn for the title
         var titleEl = document.createElement("span");
         titleEl.textContent = bookTitle;
+        titleEl.classList = "search-results"
 
         //console.log(bookTitle);
 
@@ -60,6 +61,7 @@ var displayBooksInfo = function(books) {
         // creat a sapn for the authors
         var authorsEl = document.createElement("span")
         authorsEl.textContent = bookAuthors;
+        authorsEl.classList = "search-results"
         
         // append to the container
         resultEl.appendChild(authorsEl);
@@ -72,21 +74,32 @@ var displayBooksInfo = function(books) {
         var bookLink = books.items[i].volumeInfo.previewLink;
         //console.log(bookLink);
 
-        // creat a sapn for the link
-        var linkEl = document.createElement("link");
+        // var create a element
+        var a = document.createElement("a");
+        a.classList = "search-results"
+        a.setAttribute("href", bookLink);
+        a.innerHTML = bookLink;
+        resultEl.appendChild(a)
 
-        linkEl.textContent =bookLink;
+        // // creat a sapn for the link
+        // var linkEl = document.createElement("link");
 
-        // append to the container
-        resultEl.appendChild(linkEl);
+        // linkEl.textContent =bookLink;
+
+        // // append to the container
+        // resultEl.appendChild(linkEl);
 
 
          //getting results for book images
-        var bookImg = books.items[i].volumeInfo.thumbnail;
+        var bookImg = books.items[i].volumeInfo.imageLinks.thumbnail;
+        console.log(bookImg);
 
          // creat a sapn for the link
         var imgEl = document.createElement("img");
-        imgEl.setAttribute("src", ""+bookImg+"");
+        imgEl.classList = "search-results";
+        imgEl.src = bookImg;
+
+        
 
          // append to the container
         resultEl.appendChild(imgEl);
@@ -103,7 +116,7 @@ var displayBooksInfo = function(books) {
 
 
     };
-    //console.log(books);
+    console.log(books);
 };
 
 
