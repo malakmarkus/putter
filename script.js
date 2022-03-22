@@ -47,7 +47,7 @@ var displayBooksInfo = function(books) {
 
         // creat a sapn for the title
         var titleEl = document.createElement("span");
-        titleEl.textContent = bookTitle;
+        titleEl.textContent = "Book Title: " + bookTitle;
         titleEl.classList = "search-results"
 
         //console.log(bookTitle);
@@ -60,16 +60,13 @@ var displayBooksInfo = function(books) {
 
         // creat a sapn for the authors
         var authorsEl = document.createElement("span")
-        authorsEl.textContent = bookAuthors;
+        authorsEl.textContent = "Author(s): " + bookAuthors;
         authorsEl.classList = "search-results"
         
         // append to the container
         resultEl.appendChild(authorsEl);
 
 
-        
-
-        
         //getting results for book links
         var bookLink = books.items[i].volumeInfo.previewLink;
         //console.log(bookLink);
@@ -78,7 +75,8 @@ var displayBooksInfo = function(books) {
         var a = document.createElement("a");
         a.classList = "search-results"
         a.setAttribute("href", bookLink);
-        a.innerHTML = bookLink;
+
+        a.innerHTML ="Link:" + bookLink;
         resultEl.appendChild(a)
 
         // // creat a sapn for the link

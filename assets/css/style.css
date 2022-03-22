@@ -71,7 +71,7 @@ body {
 /* SEARCH FUNCTION */
 .card {
     width: 700px;
-    height: 850px;
+    height: 100%;
     background-color: white;
     position: relative;
     top: 50px; left: 700px;
@@ -104,4 +104,13 @@ textarea {
 .styleputter {
     font-weight: bolder;
     font-size: 40px;
+}
+.list-inside{
+list-style-position: inside;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+img {
+    width:fit-content
 }
