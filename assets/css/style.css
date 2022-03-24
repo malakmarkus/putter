@@ -44,7 +44,7 @@ body {
     background-image: url(../images/pexels-stas-knop-1340588.jpeg);
     background-attachment: fixed;
     background-repeat: no-repeat;
-    background-size: 1500px;
+    background-size: px;
     width: fit-content;
     position: relative;
     height: fit-content;
@@ -110,4 +110,9 @@ list-style-position: inside;
 }
 img {
     width:fit-content
+}
+
+#flex {
+    display:flex;
+    
 }
