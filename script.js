@@ -1,6 +1,10 @@
 /* questions
 1- in the link reults instead of showing thw actual link we need it to show "click here"
-2- tailwindcss warning ?
+2- we need to add another API as per the project requirements
+3-remove the alert and add a modal or dialog using jqueryUI
+4-Use client-side storage to store persistent data
+5-random button
+6-readMe 
 
 
 */
@@ -83,7 +87,7 @@ var displayBooksInfo = function(books) {
         a.classList = "search-results"
         a.setAttribute("href", bookLink);
 
-        a.innerHTML ="Link:" + bookLink;
+        a.innerHTML ="Click Here";
         resultEl.appendChild(a)
 
         // // creat a sapn for the link
