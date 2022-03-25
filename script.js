@@ -25,9 +25,10 @@ var submitHandler = function(event){
         inputEl.value = "";
     }
     else{
-        alert("please enter a book name")
+        dialog.showModal();
     }
 };
+
 
 // books search function
 var  searchBooks = function(book) {
@@ -87,7 +88,7 @@ var displayBooksInfo = function(books) {
         a.classList = "search-results"
         a.setAttribute("href", bookLink);
 
-        a.innerHTML ="Click Here";
+        a.innerHTML ="Start reading";
         resultEl.appendChild(a)
 
         // // creat a sapn for the link
