@@ -17,27 +17,45 @@
     <header class="container">
 
         <h1>
-            <span class="styleputter">putter.</span>
+            <span class="styleputter">peruse.</span>
         </h1>
 
     </header>
+    <dialog id="dialog">
+        <form method="dialog">
+            <p>
+                <label>Sorry! we coudn't find your book</label>
+            </p>
 
-   
+            <menu>
+                <button id="backBtn" value="default">Back</button>
+            </menu>
+
+        </form>
+    </dialog>
+
+
     <!-- Hero Feature with Book Image and Search Function-->
-    <div class="hero" id="flex">
-        <div class="card">
+    <div class="hero" id="flex" class="container">
+        <form id="search-form" class="card h-auto" >
             <h2><span class="span2">Search a Book to Preview:</span></h2>
             <br>
-            <textarea>Harry Potter</textarea>
+            <input class="shadow appearance-none border rounded w-half py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="book-name" type="text" placeholder="Enter Book Name">
             <br>
             <br>
 
             <div class="button">
-                <button>Search</button>
+                <button type="submit">Search</button>
             </div>
+        </form>
+        <div class="card">
+            <h2>
+                <span class="span2">Search Results</span>
+            </h2>
+            <div id="results-container" class="list-group"></div>
         </div>
     </div>
-
+    <script src="script.js"></script>
 </body>
 
 </html>
