@@ -9,18 +9,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,500&display=swap" rel="stylesheet">
+    <script src="assets/tailwind.config.js"></script>
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>peruse.</title>
 </head>
 
 <body>
-    <header class="container">
-
+    <header>
         <h1>
             <span class="styleputter">peruse.</span>
         </h1>
-
     </header>
+
     <dialog id="dialog">
         <form method="dialog">
             <p>
@@ -36,23 +36,37 @@
 
 
     <!-- Hero Feature with Book Image and Search Function-->
+    <!-- <div class="md: flex align-bottom"> </div>
     <div class="hero" id="flex" class="container">
-        <form id="search-form" class="card h-auto" >
+    </div> -->
+
+    <!-- Begin Media Query Tailwind #1 Here with div class-->
+    <div class="md: flex-row-reverse justify-center" >
+
+        <form id="search-form" class="card h-auto">
             <h2><span class="span2">Search a Book to Preview:</span></h2>
             <br>
-            <input class="shadow appearance-none border rounded w-half py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="book-name" type="text" placeholder="Enter Book Name">
+            <input
+            class="shadow appearance-none border rounded w-half py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
+            id="book-name" type="text" placeholder="Enter Book Name">
             <br>
             <br>
-
+            
             <div class="button">
                 <button type="submit">Search</button>
             </div>
         </form>
-        <div class="card">
-            <h2>
-                <span class="span2">Search Results</span>
-            </h2>
-            <div id="results-container" class="list-group"></div>
+    </div>
+
+
+        <!-- Begin Media Query Tailwind #2 Here-->
+        <div class="md: flex-row-reverse justify-center">
+            <div class="card">
+                <h2>
+                    <span class="span2">Search Results</span>
+                </h2>
+                <div id="results-container" class="list-group"></div>
+            </div>
         </div>
     </div>
     <script src="script.js"></script>

@@ -1,12 +1,16 @@
 /* TAILWIND MEDIA QUERIES FOR SMALLER DESKTOP SCREENS AND SMALLER */
 
-export const theme = {
-    screens: {
-        'sm': '640px',
-        // => @media (min-width: 640px) { ... }
-        'md': '768px',
-        // => @media (min-width: 1768px) { ... }
-        'lg': '1024px',
-        // => @media (min-width: 1024px) { ... }
-    },
-};
+module.exports = {
+    theme: {
+        screens: {
+            'lg': {'max': '980px'},
+            // => @media (max-width: 980px) { ... }
+
+            'md': {'max': '768px'},
+            // => @media (max-width: 768px) { ... }
+
+            'sm': {'max': '575px'},
+            // => @media (max-width: 575px) { ... }
+        },
+    }
+}
