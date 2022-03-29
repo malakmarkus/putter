@@ -34,61 +34,44 @@
         </form>
     </dialog>
 
-    <!-- Begin Media Query Tailwind #1 Here with div class-->
-    <div class="md: flex-row-reverse justify-center" >
-
-
-        <form id="search-form" class="card h-auto">
-
-    <!-- Hero Feature with Book Image and Search Function-->
-
-    <div class="hero" id="flex" class="container">
-        <form id="search-form" class="card h-auto" >
-
-            <h2><span class="span2">Search a Book to Preview:</span></h2>
-            <br>
-            <input
-            class="shadow appearance-none border rounded w-half py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline"
-            id="book-name" type="text" placeholder="Enter Book Name">
-            <br>
-            <br>
-            
-            <div class="button">
-                <button type="submit">Search</button>
-            </div>
-        </form>
-
+    <div class="md: flex-row-reverse justify-center" >    
+        <div class="hero" id="flex" class="container">
+            <form id="search-form" class="card h-auto">
+                <h2><span class="span2">Search a Book to Preview:</span></h2>
+                <br>
+                <input class="shadow appearance-none border rounded w-half py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="book-name" type="text" placeholder="Enter Book Name">
+                <br>
+                <br>
+                
+                <div class="button">
+                    <button type="submit">Search</button>
+                </div>
+            </form>
+        </div>
     </div>
-
-
-        <!-- Begin Media Query Tailwind #2 Here-->
-        <div class="md: flex-row-reverse justify-center">
-            <div class="card">
-                <h2>
-                    <span class="span2">Search Results</span>
-                </h2>
-                <div id="results-container" class="list-group"></div>
-            </div>
-
+    
+    <div class="md: flex-row-reverse justify-center" > 
         <div class="hero" class="container">
             <form id="search-form" class="card h-auto" >
-                <h2><span class="span2">Want to meet a Nobel Prize winner writer ?</span></h2>
+                <h2><span class="span2">Want to meet a Nobel Prize winning author?</span></h2>
                 <br>
                 <div class="button">
                     <button  id="random">Click Here</button>
                 </div>
                 <br>
                 <br>
-            </form>
-
+            </form>  
+        </div>
+           
         <div class="card">
             <h2>
                 <span class="span2">Search Results</span>
             </h2>
             <div id="results-container" class="list-group"></div>
-
         </div>
+
     </div>
+
     <script src="script.js"></script>
 </body>
 
