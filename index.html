@@ -10,24 +10,37 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:ital,wght@1,500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/style.css">
-    <title>putter</title>
+    <title>peruse.</title>
 </head>
 
 <body>
     <header class="container">
 
         <h1>
-            <span class="styleputter">putter.</span>
+            <span class="styleputter">peruse.</span>
         </h1>
 
     </header>
+    <dialog id="dialog">
+        <form method="dialog">
+            <p>
+                <label>Sorry! we coudn't find your book</label>
+            </p>
+
+            <menu>
+                <button id="backBtn" value="default">Back</button>
+            </menu>
+
+        </form>
+    </dialog>
+
 
     <!-- Hero Feature with Book Image and Search Function-->
-    <div class="hero" id="flex">
+    <div class="hero" class="container">
         <form id="search-form" class="card h-auto" >
             <h2><span class="span2">Search a Book to Preview:</span></h2>
             <br>
-            <input class="shadow appearance-none border rounded w-half py-2 px-3 text-gray-200 leading-tight focus:outline-none focus:shadow-outline" id="book-name" type="text" placeholder="Enter Book Name">
+            <input class="shadow appearance-none border rounded w-half py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="book-name" type="text" placeholder="Enter Book Name">
             <br>
             <br>
 
@@ -35,6 +48,17 @@
                 <button type="submit">Search</button>
             </div>
         </form>
+        <div class="hero" class="container">
+            <form id="search-form" class="card h-auto" >
+                <h2><span class="span2">Want to meet a Nobel Prize winner writer ?</span></h2>
+                <br>
+                <div class="button">
+                    <button  id="random">Click Here</button>
+                </div>
+                <br>
+                <br>
+            </form>
+
         <div class="card">
             <h2>
                 <span class="span2">Search Results</span>
