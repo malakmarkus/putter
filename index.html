@@ -15,12 +15,14 @@
 </head>
 
 <body>
+    <!-- page title -->
     <header>
         <h1>
             <span class="styleputter">peruse.</span>
         </h1>
     </header>
 
+    <!-- dialog for incorrect input to search bar -->
     <dialog id="dialog">
         <form method="dialog">
             <p>
@@ -37,22 +39,18 @@
     <!-- Begin API integration -->
     <div class="md: flex-row-reverse justify-center" >    
         <div class="hero" id="flex" class="container">
+            <!-- Google books API -->
             <form id="search-form" class="card h-auto">
                 <h2><span class="span2">Search a Book to Preview:</span></h2>
                 <br>
                 <input class="shadow appearance-none border rounded w-half py-2 px-3 text-black leading-tight focus:outline-none focus:shadow-outline" id="book-name" type="text" placeholder="Enter Book Name">
                 <br>
                 <br>
-                
                 <div class="button">
                     <button type="submit">Search</button>
                 </div>
             </form>
-        </div>
-    
-    
-    <div class="md: flex-row-reverse justify-center" > 
-        <div class="hero" class="container">
+            <!-- Nobel Prize API -->
             <form id="search-form" class="card h-auto" >
                 <h2><span class="span2">Want to meet a Nobel Prize winning author?</span></h2>
                 <br>
@@ -62,15 +60,15 @@
                 <br>
                 <br>
             </form>  
+            <!-- Search result for both APIs -->
+            <div class="card">
+                <h2>
+                    <span class="span2">Search Results</span>
+                </h2>
+                <div id="results-container" class="list-group">
+                </div>
+            </div>
         </div>
-
-        <div class="card">
-            <h2>
-                <span class="span2">Search Results</span>
-            </h2>
-            <div id="results-container" class="list-group"></div>
-        </div>
-
     </div>
 
     <script src="script.js"></script>
