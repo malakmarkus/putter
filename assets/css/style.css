@@ -3,9 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 dialog::backdrop {
     background: rgba(41,150,195,.25);
 }
+
 #dialog {
     width: 400px;
     height: 250px;
@@ -14,9 +16,8 @@ dialog::backdrop {
     background: rgb(69, 109, 219);
     color:white;
     position: sticky;
-    
-
 }
+
 label {
     font-size: 20px;
     margin: 20px;
@@ -25,10 +26,12 @@ label {
     align-items: center;
     justify-content: space-around;
 }
+
 menu{
     display:flex;
     justify-content: center;
 }
+
 #backBtn {
     color: white;
     font-size: 25px;
@@ -38,23 +41,28 @@ menu{
     border-radius: 10px 10px 10px;
     border-color: skyblue;
     width:200px;
+}
 
+header {
+    margin: 15px;
+    padding: 0;
+    display: flex;
+    justify-content:left;
 }
 
 
-
 h1 {
-    position: relative;
-    top: 10px;
-    left: 10px;
-    padding: 0 0 10px 30px;
+    display: inline-block;
+    text-align:center;
     background-color: white;
     color: skyblue;
     font-weight: bolder;
     font-size: 40px;
-    border-radius: 20px 20px 20px 20px;
-    
+    padding: 15px 150px;
+    margin: 5px;
+    border-radius: 20px;
 }
+
 h2 {
     position: relative;
     left: 25%;
@@ -62,6 +70,7 @@ h2 {
     color: white;
     padding-top: 20px;
 }
+
 .span2 {
     background-color: skyblue;
     border-radius: 10px 10px 10px 10px;
@@ -69,6 +78,7 @@ h2 {
     position: relative;
     left: 10%;
 }
+
 .search-results{
     background-color: skyblue;
     border-radius: 10px 10px 10px 10px;
@@ -76,28 +86,17 @@ h2 {
     margin: 10px;
     display: flex;
     left: 10%;
-
 }
+
 body {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-image: url(../images/pexels-stas-knop-1340588.jpeg);
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size:cover;
-    width: fit-content;
-    position: relative;
-    height: fit-content;
-    
 }
-​
-.container {
-    width: 100%;
-    height: 100%;
-}
-​
+
 .hero {
-    position: relative;
-    left: 700px;
     background-color: white;
     width: 700px;
     height: 700px;
@@ -105,6 +104,7 @@ body {
     margin-bottom: 10%;
    
 }
+
 /* SEARCH FUNCTION */
 .card {
     width: 700px;
@@ -114,9 +114,11 @@ body {
     top: 50px; left: 700px;
     border-radius: 20px 20px 20px 20px;
 }
+
 button:hover {
     background-image: linear-gradient(to bottom, skyblue, steelblue);
 }
+
 .button {
     position: relative;
     left: 10%;
@@ -142,12 +144,14 @@ textarea {
     font-weight: bolder;
     font-size: 40px;
 }
+
 .list-inside{
 list-style-position: inside;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
 }
+
 img {
     width:fit-content
 }
@@ -157,3 +161,4 @@ img {
     flex-direction: column;
     
 }
+
