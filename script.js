@@ -176,7 +176,7 @@ var displayNobelWinner = function(data) {
             a.classList = "search-results"
             a.setAttribute("href", summaryLink);
 
-            a.innerHTML ="Winner Info";
+            a.innerHTML ="Click for more info";
             nobelResultEl.appendChild(a)
 
             //append container to the dom

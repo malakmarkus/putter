@@ -1,6 +1,4 @@
 * {
-    margin: 0;
-    padding: 0;
     box-sizing: border-box;
 }
 /* warning if someone does not input something in search bar */
@@ -66,9 +64,8 @@ h1 {
 /* API integration buttons */
 h2 {
     position: relative;
-    margin: 15px;
     color: white;
-    padding-top: 20px;
+    padding: 10px 0 10px 0;
 }
 
 .span2 {
@@ -111,7 +108,6 @@ body {
     border-radius: 20px;
     padding: 10px;
     margin: 15px;
-    height: fit-content;
 }
 
 button:hover {
